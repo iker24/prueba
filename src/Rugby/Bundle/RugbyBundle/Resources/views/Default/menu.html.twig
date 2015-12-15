@@ -1,0 +1,24 @@
+{% extends 'RugbyRugbyBundle::layout.html.twig' %}
+{% block centro %}
+    
+    <h3>Estas son las selecciones mas importantes</h3>
+    
+    <table>
+        {% for unafila in tabla %}
+            <tr>
+                <td><a href="{{
+   path('rugby_selecciones',  { 'titulo': unafila.titulo , 'contenido': unafila.contenido , 'foto': unafila.foto } )
+   }}"> {{unafila.titulo }}</a></td>
+                
+                <td><img src="{{ asset('bundles/rugbyrugby/imagenes/'~ unafila.foto  ~ '') }}" width=40% height=40%/></td>
+        
+            </tr>
+         {% endfor %}   
+    </table>
+    
+    
+    
+
+
+
+   {% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'RugbyRugbyBundle::layout.html.twig' %}
+   {% block centro %}
+       <h1>{{twigtitulo}} </h1>
+{{twigcontenido}}
+<br/>
+<img src="{{ asset('bundles/rugbyrugby/imagenes/'~ twigfoto  ~ '') }}" width=40% height=40%/>
+<a href="{{
+    url('rugby_rugby')
+  }}"><br/>Volver</a>
+{% endblock %}
+

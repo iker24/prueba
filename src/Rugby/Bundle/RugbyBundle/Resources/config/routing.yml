@@ -1,0 +1,10 @@
+rugby_rugby_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: RugbyRugbyBundle:Default:index }
+rugby_rugby:
+    path:     /menu
+    defaults: { _controller: RugbyRugbyBundle:Default:menu }
+
+rugby_selecciones:
+    path:     /selecciones/{titulo}/{contenido}/{foto}
+    defaults: { _controller: RugbyRugbyBundle:Default:selecciones }

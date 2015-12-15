@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{% block title %}Rugby{% endblock %}</title>
+         {% block stylesheets %}
+                <link href="{{ asset('bundles/rugbyrugby/css/rugby.css') }}" type="text/css" rel="stylesheet" />
+        {% endblock %}
+    </head>
+    <body>
+        
+        <div id="titulo">
+            {% block cabecera %}
+               <h1>MUNDIAL DE RUGBY 2015</h1>
+            {% endblock %}
+        </div>
+       
+         <div id="fondo">
+            {% block cuerpo %}Cuerpo{% endblock %}
+            <br>
+            <br>
+              <br>
+            <br>
+              <br>
+            <br>
+             <br>
+           
+        </div>
+        
+         <div id="pie">
+            {% block pie %}<center>By Iker</center>{% endblock %}
+        </div>
+       
+    </body>
+</html>

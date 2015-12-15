@@ -1,0 +1,4 @@
+rugby_rugby:
+    resource: "@RugbyRugbyBundle/Resources/config/routing.yml"
+    prefix:   /
+
